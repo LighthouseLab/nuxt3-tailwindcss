@@ -5,7 +5,7 @@
       <p><slot name="message">This is a Nuxt 3 starter kit.</slot></p>
       <p class="credit">
         Brought to you by
-        <a href="https://twitter.com/RickyDevs">@RickyDevs on Twitter</a>.
+        <a href="https://twitter.com/RicardoBalk">Ricardo Balk</a>.
       </p>
     </div>
   </div>
