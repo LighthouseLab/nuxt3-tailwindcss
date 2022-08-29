@@ -1,15 +1,16 @@
 {
   "private": true,
   "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "start": "node .output/server/index.mjs"
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "node .output/server/index.mjs",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
   },
   "devDependencies": {
-    "autoprefixer": "^10.3.7",
-    "nuxt3": "^3.0.0-27238235.a1bcc53",
-    "postcss": "^8.3.11",
-    "sass": "^1.43.4",
-    "tailwindcss": "^3.0.0-alpha.1"
+    "autoprefixer": "^10.4.8",
+    "nuxt": "^v3.0.0-rc.8",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
   }
 }

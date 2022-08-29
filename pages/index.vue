@@ -11,7 +11,7 @@ import { defineComponent, computed } from 'vue'
 export default defineComponent({
   setup() {
     const productName: string = "Nuxt 3";
-    const features: string[] = ["Vite", "Vue 3", "TypeScript", "SCSS", "TailwindCSS"];
+    const features: string[] = ["Vite", "Vue 3", "TypeScript", "PostCSS", "TailwindCSS"];
     const message = computed(
       () => `This is a ${productName} Starter Kit with ${features.slice(0, -1).join(", ")} and ${features.slice(-1)}!`
     )
