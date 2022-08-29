@@ -11,7 +11,7 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="postcss" scoped>
 .home {
   @apply h-screen flex flex-row items-center justify-center text-gray-600;
   @apply dark:bg-gray-900 dark:text-gray-100;
