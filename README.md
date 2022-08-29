@@ -1,6 +1,6 @@
 # Nuxt 3 Starter Kit
 
-This is a Nuxt 3 Starter Kit with Vite, Vue 3, TypeScript, SCSS and TailwindCSS!
+This is a Nuxt 3 Starter Kit with Vite, Vue 3, TypeScript, PostCSS and TailwindCSS!
 
 We recommend to look at the [documentation](https://v3.nuxtjs.org).
 
