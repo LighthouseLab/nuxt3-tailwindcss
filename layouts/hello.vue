@@ -5,7 +5,9 @@
       <p><slot name="message">This is a Nuxt 3 starter kit.</slot></p>
       <p class="credit">
         Brought to you by
-        <a href="https://twitter.com/RicardoBalk">Ricardo Balk</a>.
+        <a href="https://ricardo.nu/">Ricardo Balk</a>.
+
+        Always check <a href="https://github.com/templatekitchen/nuxt3-tailwindcss">@templatekitchen/nuxt3-tailwindcss</a> for the latest version!
       </p>
     </div>
   </div>
@@ -13,25 +15,21 @@
 
 <style lang="postcss" scoped>
 .home {
-  @apply h-screen flex flex-row items-center justify-center text-gray-600;
-  @apply dark:bg-gray-900 dark:text-gray-100;
+  @apply h-screen flex items-center justify-center bg-gray-925 text-gray-200;
 
   .card {
-    @apply my-4 p-8 rounded-2xl border border-gray-100 shadow-md;
-    @apply dark:border-gray-400 dark:shadow-none;
+    @apply p-8 flex flex-col gap-6 rounded-2xl border border-green-900 shadow-none;
 
     .title {
-      @apply mb-2 text-gray-600 text-3xl font-thin;
-      @apply dark:text-blue-400;
+      @apply text-green-600 text-3xl font-thin;
     }
 
     .credit {
-      @apply text-xs mt-2;
+      @apply text-xs;
     }
 
     a {
-      @apply text-blue-600 underline;
-      @apply dark:text-blue-200;
+      @apply text-green-200 hover:text-green-400 underline transition-colors;
     }
   }
 }
