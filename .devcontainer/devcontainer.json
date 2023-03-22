@@ -1,0 +1,17 @@
+{
+  "name": "Node.js 18 Alpine",
+  "build": { "dockerfile": "Dockerfile" },
+  "postCreateCommand": "yarn install",
+  "postStartCommand": "yarn dev",
+"forwardPorts": [
+	3000
+],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bradlc.vscode-tailwindcss",
+        "cpylua.language-postcss"
+      ]
+    }
+  }
+} 
