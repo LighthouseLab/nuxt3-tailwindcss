@@ -15,7 +15,7 @@
 
 <style lang="postcss" scoped>
 .home {
-  @apply h-screen flex items-center justify-center bg-gray-925 text-gray-200;
+  @apply h-screen flex items-center justify-center bg-gray-925 text-gray-200 p-6;
 
   .card {
     @apply p-8 flex flex-col gap-6 rounded-2xl border border-green-900 shadow-none;
