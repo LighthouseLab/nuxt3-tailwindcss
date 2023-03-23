@@ -7,7 +7,7 @@
         Brought to you by
         <a href="https://ricardo.nu/">Ricardo Balk</a>.
 
-        Always check <a href="https://github.com/templatekitchen/nuxt3-tailwindcss">@templatekitchen/nuxt3-tailwindcss</a> for the latest version!
+        Always check <a href="https://github.com/ricardobalk/nuxt3-tailwindcss">@ricardobalk/nuxt3-tailwindcss</a> for the latest version!
       </p>
     </div>
   </div>
