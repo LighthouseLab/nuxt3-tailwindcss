@@ -73,7 +73,7 @@ See the [official Nuxt 3 deployment documentation][] for more details.
 <!-- Links used in the document -->
 [docker-compose]: https://docs.docker.com/compose/
 [docker]: https://www.docker.com/
-[official Nuxt 3 deployment documentation]: https://v3.nuxtjs.org/docs/deployment
+[official Nuxt 3 deployment documentation]: https://nuxt.com/docs/getting-started/deployment
 [online-dev-env-github-codespaces]: http://github.dev/ricardobalk/nuxt3-tailwindcss
 [online-dev-env-stackblitz]: https://stackblitz.com/github/ricardobalk/nuxt3-tailwindcss
 [online-dev-env-vscode-web]: https://vscode.dev/github/ricardobalk/nuxt3-tailwindcss
