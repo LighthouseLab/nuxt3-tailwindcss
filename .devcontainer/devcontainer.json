@@ -1,17 +1,24 @@
 {
-  "name": "Node.js 18 Alpine",
-  "build": { "dockerfile": "Dockerfile" },
-  "postCreateCommand": "yarn install",
-  "postStartCommand": "yarn dev",
-"forwardPorts": [
-	3000
-],
+  "name": "Node 18.15.0 on Alpine 3.16",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "target": "node-base"
+  },
+  "forwardPorts": [ 3000 ],
+  "workspaceFolder": "/home/node/app",
+  "containerUser": "node",
+  "mounts": [
+    "source=${localWorkspaceFolder}/,target=/home/node/app/,type=bind,consistency=cached"
+  ],
   "customizations": {
     "vscode": {
       "extensions": [
+        "vue.volar",
         "bradlc.vscode-tailwindcss",
         "cpylua.language-postcss"
       ]
     }
-  }
-} 
+  },
+  "postCreateCommand": "yarn",
+  "postStartCommand": "yarn dev"
+}

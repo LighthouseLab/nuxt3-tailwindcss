@@ -1,6 +1,6 @@
 {
   "recommendations": [
-    "johnsoncodehk.volar",
-    "bradlc.vscode-tailwindcss"
+    "bradlc.vscode-tailwindcss",
+    "vue.volar"
   ]
 }

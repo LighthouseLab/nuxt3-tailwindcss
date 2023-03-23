@@ -1,0 +1,15 @@
+services:
+  nuxt3-tailwindcss:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./:/home/node/app/
+      - node_modules:/home/node/app/node_modules/
+volumes:
+  node_modules: {}
