@@ -1,11 +1,12 @@
 FROM node:18.15.0-alpine3.16 as node-base
 # docker build --no-cache --progress plain -t ricardobalk/nuxt3-tailwindcss:latest --target <target> -f Dockerfile .
 
+RUN apk add --no-cache git
+
 USER node
 ENV NPM_CONFIG_PREFIX=/home/node/.npm
 ENV PATH=$PATH:/home/node/.npm/bin
 
-RUN apk add --no-cache git
 
 RUN mkdir -p  "${HOME}/app" \
               "${NPM_CONFIG_PREFIX}/bin"
