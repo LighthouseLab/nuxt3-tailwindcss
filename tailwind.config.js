@@ -1,3 +1,4 @@
+const plugin = require('tailwindcss/plugin');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -31,5 +32,17 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(function({ addUtilities }) {
+      addUtilities({
+        '.bg-green-striped': {
+          'background-image': `linear-gradient(45deg, #0a2000 10%, transparent 10%,
+            transparent 20%, #0a2000 20%, #0a2000 30%, transparent 30%, transparent 40%,
+            #0a2000 40%, #0a2000 50%, transparent 50%, transparent 60%, #0a2000 60%,
+            #0a2000 70%, transparent 70%, transparent 80%, #0a2000 80%, #0a2000 90%,
+            transparent 90%, transparent)`,
+        },
+      })
+    })
+  ],
 }
