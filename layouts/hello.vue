@@ -7,7 +7,7 @@
         Brought to you by
         <a href="https://ricardo.nu/">Ricardo Balk</a>.
 
-        Always check <a href="https://github.com/ricardobalk/nuxt3-tailwindcss">@ricardobalk/nuxt3-tailwindcss</a> for the latest version!
+        Always check the <a href="https://github.com/ricardobalk/nuxt3-tailwindcss">GitHub repository</a> for the latest version!
       </p>
     </div>
   </div>
@@ -18,7 +18,7 @@
   @apply h-screen flex items-center justify-center bg-gray-925 text-gray-200 p-6;
 
   .card {
-    @apply p-8 flex flex-col gap-6 rounded-2xl border border-green-900 shadow-none;
+    @apply px-8 py-10 flex flex-col gap-6 rounded-2xl border border-green-900 bg-green-striped shadow-none md:items-center;    
 
     .title {
       @apply text-green-600 text-3xl font-thin;
@@ -29,7 +29,7 @@
     }
 
     a {
-      @apply text-green-200 hover:text-green-400 underline transition-colors;
+      @apply text-green-400 hover:text-green-200 underline transition-colors;
     }
   }
 }
