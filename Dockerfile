@@ -1,4 +1,4 @@
-FROM node:18.15.0-alpine3.16 as node-base
+FROM node:18.17.1-alpine3.17 as node-base
 # docker build --no-cache --progress plain -t ricardobalk/nuxt3-tailwindcss:latest --target <target> -f Dockerfile .
 
 RUN apk add --no-cache git
@@ -31,7 +31,7 @@ FROM dependencies as build
 USER node
 RUN ["yarn", "run", "generate"]
 
-FROM nginx:1.21.1-alpine as production
+FROM nginx:1.25.2-alpine3.18-slim as deployment
 COPY --from=build /home/node/app/.output/public /usr/share/nginx/html
 EXPOSE 80 443
 CMD ["nginx", "-g", "daemon off;"]
